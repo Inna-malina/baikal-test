@@ -1,0 +1,93 @@
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url('../img/bajkal-best18.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: move-hero 20s ease both;
+    -webkit-animation: move-hero 20s ease both;
+}
+
+@keyframes move-hero {
+    to {
+        background-size: 100%;
+    }
+}
+
+.hero>:not(:last-child) {
+    padding: 0px 0px 25px 0px;
+}
+
+.hero h2 {
+    font-family: 'Syncopate', sans-serif;
+    letter-spacing: 5px;
+}
+
+.hero h1 {
+    font-family: 'Syncopate', sans-serif;
+    letter-spacing: 15px;
+}
+
+.hero p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero a {
+    cursor: pointer;
+    padding: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    background: #ff5722;
+    color: white;
+    display: block;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 360px) and (max-width: 649px) {
+    .hero {
+        background-position: top;
+        min-height: 40vh;
+        justify-content: flex-end;
+        padding: 0px 0px 50px 0px;
+    }
+
+    .hero a {
+        font-size: 14px;
+    }
+
+    .hero>:not(:last-child) {
+        padding: 0px 0px 10px 0px;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 899px) {
+    .hero {
+        background-position: top;
+        min-height: 70vh;
+    }
+
+    .hero a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1099px) {
+    .hero a {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+    .hero a {
+        font-size: 16px;
+    }
+}

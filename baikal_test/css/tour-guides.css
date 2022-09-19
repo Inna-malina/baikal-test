@@ -1,0 +1,94 @@
+.tour-guides__box {
+    padding: 70px 0px 100px 0px;
+}
+
+.tour-guides__box>:not(:last-child) {
+    margin: 0px 0px 70px 0px;
+}
+
+.tour-guides__header {}
+
+.tour-guides__header h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+.tour-guide-wrapper {}
+
+.tour-guide__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-img-wrapper:nth-child(1) {
+    background-image: url(../img/one-guide.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.card-img-wrapper:nth-child(2) {
+    background-image: url(../img/two-guide.jpg);
+    background-size: cover;
+    background-position-x: -240px;
+    background-repeat: no-repeat;
+}
+
+.card-img-wrapper:nth-child(3) {
+    background-image: url(../img/three-guide.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.card-img-wrapper {
+    width: 30%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-end;
+    transform-style: preserve-3d;
+}
+
+.card-img-wrapper:hover .wrapper-info {
+
+    transform: translateZ(20px);
+    -webkit-transform: translateZ(20px);
+    -moz-transform: translateZ(20px);
+    -ms-transform: translateZ(20px);
+    -o-transform: translateZ(20px);
+}
+
+.wrapper-info {
+    background: rgba(255, 255, 255, 0.699);
+    padding: 25px;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+}
+
+.card-img-wrapper:hover {}
+
+.wrapper-info>:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+}
+
+.wrapper-info .title-guide {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+
+.wrapper-info .text-guide {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.title-guide {}
+
+.text-guide {}

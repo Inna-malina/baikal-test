@@ -1,0 +1,126 @@
+.description {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url('../img/baikal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.description__flexbox {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.description__box {
+    width: 590px;
+    background: linear-gradient(rgb(255 255 255 / 70%), transparent);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.description__box h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 0px 0px 20px 0px;
+}
+
+.description__box p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.clowd {
+    position: absolute;
+}
+
+.clowd-1 {
+    width: 57%;
+    top: 0px;
+    right: 50px;
+    animation: clowd-one 7s ease-out infinite both;
+    -webkit-animation: clowd-one 7s ease-out infinite both;
+}
+
+.clowd-2 {
+    width: 45%;
+    top: 20px;
+    right: 30px;
+    animation: clowd-two 7s ease-out infinite both;
+    -webkit-animation: clowd-two 7s ease-out infinite both;
+}
+
+@keyframes clowd-one {
+    from {
+        top: 0px;
+        right: 30px;
+    }
+
+    50% {
+        top: 30px;
+        right: 60px;
+    }
+
+    to {
+        top: 0px;
+        right: 30px;
+    }
+}
+
+@keyframes clowd-two {
+    from {
+        top: 20px;
+        right: 30px;
+    }
+
+
+    50% {
+        top: -10px;
+        right: -40px;
+    }
+
+
+    to {
+        top: 20px;
+        right: 30px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 649px) {
+    .description__flexbox {
+        justify-content: center;
+    }
+
+    .description__box {
+        width: 550px;
+    }
+
+    .clowd-1, .clowd-2 {
+        display: none;
+        animation: none;
+        -webkit-animation: none;
+    }
+
+}
+
+@media (min-width: 650px) and (max-width: 899px) {
+    .description__flexbox {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1099px) {
+    .description__box {
+        width: 550px;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+    .description__box {
+        width: 550px;
+    }
+}
